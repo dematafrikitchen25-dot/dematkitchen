@@ -335,7 +335,7 @@ const Menu = () => {
                               {item.variations.map((variation, varIndex) => (
                                 <Button
                                   key={varIndex}
-                                  variant={selectedVariationIndex === varIndex ? "secondary" : "outline"}
+                                  variant={selectedVariationIndex === varIndex ? "selected" : "outline"}
                                   size="sm"
                                   onClick={() => setSelectedVariations({ ...selectedVariations, [itemKey]: varIndex })}
                                   className="text-sm"
