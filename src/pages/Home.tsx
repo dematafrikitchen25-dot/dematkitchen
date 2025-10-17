@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MessageCircle, UtensilsCrossed, Leaf, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/hero-bg.png";
 import soupDish from "@/assets/soup-dish.jpg";
 import mainDish from "@/assets/main-dish.jpg";
 import juice from "@/assets/juice.jpg";
@@ -62,10 +62,10 @@ const Home = () => {
         
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="font-playfair text-5xl md:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
-            Taste the Soul of Africa
+            Authentic Nigerian & African Soups and Foods in Qatar
           </h1>
           <p className="font-inter text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto animate-fade-in">
-            Authentic African soups, traditional dishes, and fresh juices delivered to your door in Qatar
+            Bringing the flavors of home to Africans in diaspora and sharing African cuisine with Qatar
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
             <Button variant="order" size="lg" asChild>
@@ -90,7 +90,7 @@ const Home = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center text-foreground mb-12">
-            Why Choose Afro Flavors?
+            Why Choose Demat African Kitchen?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
