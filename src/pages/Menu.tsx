@@ -163,6 +163,104 @@ const Menu = () => {
         },
       ],
     },
+    {
+      category: "Rice & Pasta",
+      image: mainDish,
+      items: [
+        {
+          name: "Native Jollof Rice",
+          description: "Traditional Jollof rice with authentic spices",
+          variations: [{ name: "Regular", price: "25 QAR" }],
+        },
+        {
+          name: "Jollof Rice Only",
+          description: "Classic Jollof rice without proteins",
+          variations: [{ name: "Regular", price: "20 QAR" }],
+        },
+        {
+          name: "White Rice with Pepper Soup Side",
+          description: "Steamed white rice served with pepper soup",
+          variations: [{ name: "Regular", price: "35 QAR" }],
+        },
+        {
+          name: "Spaghetti Jollof Only",
+          description: "Jollof-style spaghetti with spices",
+          variations: [{ name: "Regular", price: "40 QAR" }],
+        },
+        {
+          name: "Waakye",
+          description: "Rice and beans dish with special sauces",
+          variations: [{ name: "Regular", price: "30 QAR" }],
+        },
+      ],
+    },
+    {
+      category: "Pepper Soups",
+      image: soupDish,
+      items: [
+        {
+          name: "Catfish Pepper Soup",
+          description: "Spicy pepper soup with fresh catfish",
+          variations: [{ name: "Regular", price: "40 QAR" }],
+        },
+        {
+          name: "Assorted Pepper Soup",
+          description: "Mixed meat pepper soup with traditional spices",
+          variations: [{ name: "Regular", price: "38 QAR" }],
+        },
+        {
+          name: "Chicken Pepper Soup",
+          description: "Aromatic pepper soup with tender chicken",
+          variations: [{ name: "Regular", price: "36 QAR" }],
+        },
+        {
+          name: "Goat Meat Pepper Soup",
+          description: "Rich pepper soup with goat meat",
+          variations: [{ name: "Regular", price: "40 QAR" }],
+        },
+      ],
+    },
+    {
+      category: "Protein (Add-ons)",
+      image: mainDish,
+      items: [
+        {
+          name: "Shaki (Beef Tripe)",
+          description: "Tender beef tripe, perfectly cooked",
+          variations: [{ name: "Regular", price: "10 QAR" }],
+        },
+        {
+          name: "Fried Chicken",
+          description: "Crispy fried chicken pieces",
+          variations: [{ name: "Regular", price: "15 QAR" }],
+        },
+        {
+          name: "Fried Fish",
+          description: "Golden fried fish",
+          variations: [{ name: "Regular", price: "15 QAR" }],
+        },
+        {
+          name: "Smoked Titus Fish",
+          description: "Premium smoked Titus fish",
+          variations: [{ name: "Regular", price: "25 QAR" }],
+        },
+        {
+          name: "Turkey (Big)",
+          description: "Large portion of tender turkey",
+          variations: [{ name: "Regular", price: "20 QAR" }],
+        },
+        {
+          name: "Roasted Turkey Only",
+          description: "Perfectly roasted turkey",
+          variations: [{ name: "Regular", price: "25 QAR" }],
+        },
+        {
+          name: "Fried Beef",
+          description: "Tender fried beef pieces",
+          variations: [{ name: "Regular", price: "15 QAR" }],
+        },
+      ],
+    },
   ];
 
   return (
