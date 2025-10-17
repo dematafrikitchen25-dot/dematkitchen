@@ -22,8 +22,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <h1 className="font-playfair text-2xl md:text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent transition-all duration-300 group-hover:scale-105">
-              Afro Flavors
+            <h1 className="font-playfair text-xl md:text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent transition-all duration-300 group-hover:scale-105">
+              Demat African Kitchen
             </h1>
           </Link>
 

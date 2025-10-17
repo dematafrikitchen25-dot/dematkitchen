@@ -61,7 +61,7 @@ const Home = () => {
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="font-playfair text-5xl md:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
+          <h1 className="font-playfair text-3xl md:text-5xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
             Authentic Nigerian & African Soups and Foods in Qatar
           </h1>
           <p className="font-inter text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto animate-fade-in">
@@ -89,7 +89,7 @@ const Home = () => {
       {/* Features Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center text-foreground mb-12">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
             Why Choose Demat African Kitchen?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -119,7 +119,7 @@ const Home = () => {
       {/* Featured Dishes Section */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center text-foreground mb-4">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
             Our Signature Dishes
           </h2>
           <p className="font-inter text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -160,7 +160,7 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-primary">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
             Ready to Experience Authentic African Flavors?
           </h2>
           <p className="font-inter text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">

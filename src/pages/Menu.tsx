@@ -268,7 +268,7 @@ const Menu = () => {
       {/* Hero Section */}
       <section className="bg-gradient-primary py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-primary-foreground mb-6 animate-fade-in">
+          <h1 className="font-playfair text-3xl md:text-4xl font-bold text-primary-foreground mb-6 animate-fade-in">
             Our Menu
           </h1>
           <p className="font-inter text-xl text-primary-foreground/90 max-w-2xl mx-auto animate-fade-in-up">
@@ -299,7 +299,7 @@ const Menu = () => {
                         />
                         <div className="absolute inset-0 bg-gradient-primary/40" />
                         <div className="absolute inset-0 flex items-center justify-center">
-                          <h2 className="font-playfair text-4xl font-bold text-primary-foreground text-center px-4">
+                          <h2 className="font-playfair text-3xl font-bold text-primary-foreground text-center px-4">
                             {category.category}
                           </h2>
                         </div>
@@ -372,7 +372,7 @@ const Menu = () => {
       {/* Order CTA */}
       <section className="py-16 bg-muted">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-6">
             Ready to Order?
           </h2>
           <p className="font-inter text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

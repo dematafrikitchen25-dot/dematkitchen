@@ -33,7 +33,7 @@ const About = () => {
           <div className="absolute inset-0 bg-gradient-hero" />
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-primary-foreground mb-6 animate-fade-in">
+          <h1 className="font-playfair text-3xl md:text-4xl font-bold text-primary-foreground mb-6 animate-fade-in">
             Our Story
           </h1>
           <p className="font-inter text-xl text-primary-foreground/90 max-w-3xl mx-auto animate-fade-in-up">
@@ -48,7 +48,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6 font-inter text-lg text-muted-foreground animate-fade-in">
               <p className="text-foreground font-semibold text-xl">
-                Welcome to Afro Flavors – where tradition meets taste in the heart of Qatar.
+                Welcome to Demat African Kitchen – where tradition meets taste in the heart of Qatar.
               </p>
               <p>
                 Our journey began with a simple yet powerful mission: to share the incredible diversity
@@ -56,7 +56,7 @@ const About = () => {
                 than just sustenance – it's a connection to home, culture, and cherished memories.
               </p>
               <p>
-                At Afro Flavors, we specialize in traditional African soups, authentic main dishes, and
+                At Demat African Kitchen, we specialize in traditional African soups, authentic main dishes, and
                 refreshing fresh juices. Each recipe has been passed down through generations, refined
                 and perfected to deliver the most authentic flavors possible. From the rich, hearty
                 Egusi soup to the perfectly spiced Jollof rice, every dish tells a story.
@@ -80,7 +80,7 @@ const About = () => {
       {/* Values Section */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center text-foreground mb-12">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
             What Drives Us
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -110,7 +110,7 @@ const About = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-primary">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
             Experience Our Passion for African Cuisine
           </h2>
           <p className="font-inter text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">

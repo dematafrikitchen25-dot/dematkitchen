@@ -35,7 +35,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="bg-gradient-primary py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-primary-foreground mb-6 animate-fade-in">
+          <h1 className="font-playfair text-3xl md:text-4xl font-bold text-primary-foreground mb-6 animate-fade-in">
             Get in Touch
           </h1>
           <p className="font-inter text-xl text-primary-foreground/90 max-w-2xl mx-auto animate-fade-in-up">

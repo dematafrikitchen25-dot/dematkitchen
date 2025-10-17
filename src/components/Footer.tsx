@@ -10,8 +10,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="font-playfair text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Afro Flavors
+            <h3 className="font-playfair text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+              Demat African Kitchen
             </h3>
             <p className="text-muted-foreground font-inter text-sm">
               Authentic African cuisine in the heart of Qatar. Order now via WhatsApp!
@@ -87,7 +87,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-border">
           <p className="text-center text-sm text-muted-foreground font-inter">
-            © {currentYear} Afro Flavors. All rights reserved.
+            © {currentYear} Demat African Kitchen. All rights reserved.
           </p>
         </div>
       </div>
