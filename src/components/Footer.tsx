@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -59,11 +59,21 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone size={18} className="text-primary flex-shrink-0" />
-                <span>+974 0000 0000</span>
+                <a href="tel:+97471962487" className="hover:text-primary transition-colors">
+                  +974 7196 2487
+                </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail size={18} className="text-primary flex-shrink-0" />
-                <span>hello@afroflavors.qa</span>
+                <a href="mailto:dematafrikitchen25@gmail.com" className="hover:text-primary transition-colors break-words">
+                  dematafrikitchen25@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2 text-muted-foreground">
+                <Instagram size={18} className="text-primary flex-shrink-0" />
+                <a href="https://www.instagram.com/demat_african_kitchen_/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  @demat_african_kitchen_
+                </a>
               </li>
             </ul>
           </div>
@@ -77,8 +87,15 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <Clock size={18} className="text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-foreground">Daily</p>
-                  <p>11:00 AM - 11:00 PM</p>
+                  <p className="font-semibold text-foreground">Mon – Thu, Sat – Sun</p>
+                  <p>10:00 AM - 11:00 PM</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-2">
+                <Clock size={18} className="text-primary mt-0.5 flex-shrink-0 invisible" />
+                <div>
+                  <p className="font-semibold text-foreground">Friday</p>
+                  <p>12:00 PM - 11:00 PM</p>
                 </div>
               </li>
             </ul>

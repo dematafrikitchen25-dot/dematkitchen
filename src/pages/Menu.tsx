@@ -142,39 +142,6 @@ const Menu = () => {
       ],
     },
     {
-      category: "Juice Blends",
-      items: [
-        {
-          name: "Zobo",
-          description: "Refreshing hibiscus drink, served chilled",
-          image: juice,
-          variations: [
-            { name: "Regular", price: "15 QAR" },
-            { name: "Large", price: "20 QAR" },
-          ],
-        },
-        {
-          name: "Chapman",
-          description: "Special fruit punch with a unique blend",
-          image: juice,
-          variations: [
-            { name: "Regular", price: "18 QAR" },
-            { name: "Large", price: "25 QAR" },
-          ],
-        },
-        {
-          name: "Fresh Fruit Juice",
-          description: "Freshly blended tropical juice",
-          image: juice,
-          variations: [
-            { name: "Mango", price: "15 QAR" },
-            { name: "Pineapple", price: "15 QAR" },
-            { name: "Mixed", price: "20 QAR" },
-          ],
-        },
-      ],
-    },
-    {
       category: "Rice & Pasta",
       items: [
         {
@@ -343,7 +310,7 @@ const Menu = () => {
           variations: [{ name: "Regular", price: "25 QAR" }],
         },
         {
-          name: "Ewa Agoyin (Beans + Sauce + Plantain)",
+          name: "Beans Porridge (Beans + Sauce + Plantain)",
           description: "Traditional beans with special sauce and plantain",
           image: mainDish,
           variations: [{ name: "Regular", price: "30 QAR" }],
