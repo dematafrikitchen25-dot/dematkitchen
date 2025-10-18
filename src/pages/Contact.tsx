@@ -1,8 +1,36 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle, Instagram } from "lucide-react";
+import { useEffect, useState } from "react";
+import { toZonedTime } from "date-fns-tz";
 
 const Contact = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const checkIfOpen = () => {
+      const qatarTime = toZonedTime(new Date(), "Asia/Qatar");
+      const day = qatarTime.getDay();
+      const hours = qatarTime.getHours();
+      const minutes = qatarTime.getMinutes();
+      const currentTime = hours * 60 + minutes;
+
+      // Friday (5): 12:00 PM - 11:00 PM
+      if (day === 5) {
+        setIsOpen(currentTime >= 12 * 60 && currentTime < 23 * 60);
+      }
+      // Monday-Thursday (1-4), Saturday-Sunday (6,0): 10:00 AM - 11:00 PM
+      else {
+        setIsOpen(currentTime >= 10 * 60 && currentTime < 23 * 60);
+      }
+    };
+
+    checkIfOpen();
+    const interval = setInterval(checkIfOpen, 60000); // Check every minute
+
+    return () => clearInterval(interval);
+  }, []);
+
   const contactInfo = [
     {
       icon: MapPin,
@@ -13,20 +41,20 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+974 0000 0000"],
-      link: "tel:+97400000000",
+      details: ["+974 7196 2487"],
+      link: "tel:+97471962487",
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["hello@afroflavors.qa"],
-      link: "mailto:hello@afroflavors.qa",
+      details: ["dematafrikitchen25@gmail.com"],
+      link: "mailto:dematafrikitchen25@gmail.com",
     },
     {
-      icon: Clock,
-      title: "Hours",
-      details: ["Open Daily", "11:00 AM - 11:00 PM"],
-      link: null,
+      icon: Instagram,
+      title: "Instagram",
+      details: ["@demat_african_kitchen_"],
+      link: "https://www.instagram.com/demat_african_kitchen_/",
     },
   ];
 
@@ -101,7 +129,7 @@ const Contact = () => {
               </p>
               <Button variant="order" size="lg" asChild>
                 <a
-                  href="https://wa.me/97400000000"
+                  href="https://wa.me/97471962487"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 mx-auto"
@@ -118,40 +146,72 @@ const Contact = () => {
       {/* Hours & Info */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-foreground mb-8">
-              Order Information
-            </h2>
-            <Card className="border-border bg-card shadow-card">
-              <CardContent className="p-8">
-                <div className="space-y-6 font-inter">
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">How to Order</h3>
-                    <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
-                      <li>Click the "Order on WhatsApp" button or send us a message at +974 0000 0000</li>
-                      <li>Tell us what dishes you'd like from our menu</li>
-                      <li>Provide your delivery address and preferred time</li>
-                      <li>We'll confirm your order and estimated delivery time</li>
-                      <li>Enjoy your delicious African meal!</li>
-                    </ol>
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div>
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
+                Opening Hours
+              </h2>
+              <div className="flex items-center justify-center gap-2 mb-8">
+                <div className={`w-3 h-3 rounded-full ${isOpen ? 'bg-green-500 animate-pulse' : 'bg-red-500'}`} />
+                <span className={`font-inter font-semibold ${isOpen ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>
+                  {isOpen ? 'Open Now' : 'Closed Now'}
+                </span>
+              </div>
+              <Card className="border-border bg-card shadow-card">
+                <CardContent className="p-8">
+                  <div className="space-y-3 font-inter">
+                    <div className="flex justify-between items-center">
+                      <span className="text-foreground font-medium">Monday – Thursday</span>
+                      <span className="text-muted-foreground">10:00 AM – 11:00 PM</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-foreground font-medium">Friday</span>
+                      <span className="text-muted-foreground">12:00 PM – 11:00 PM</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-foreground font-medium">Saturday – Sunday</span>
+                      <span className="text-muted-foreground">10:00 AM – 11:00 PM</span>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Delivery Areas</h3>
-                    <p className="text-muted-foreground">
-                      We deliver throughout Doha and surrounding areas. Delivery fees may vary based
-                      on distance. Please ask when placing your order.
-                    </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div>
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-foreground mb-8">
+                Order Information
+              </h2>
+              <Card className="border-border bg-card shadow-card">
+                <CardContent className="p-8">
+                  <div className="space-y-6 font-inter">
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-2">How to Order</h3>
+                      <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
+                        <li>Click the "Order on WhatsApp" button or send us a message at +974 7196 2487</li>
+                        <li>Tell us what dishes you'd like from our menu</li>
+                        <li>Provide your delivery address and preferred time</li>
+                        <li>We'll confirm your order and estimated delivery time</li>
+                        <li>Enjoy your delicious African meal!</li>
+                      </ol>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-2">Delivery Areas</h3>
+                      <p className="text-muted-foreground">
+                        We deliver throughout Doha and surrounding areas. Delivery fees may vary based
+                        on distance. Please ask when placing your order.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-2">Payment Methods</h3>
+                      <p className="text-muted-foreground">
+                        We accept cash on delivery and bank transfers. Payment details will be provided
+                        when you confirm your order.
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Payment Methods</h3>
-                    <p className="text-muted-foreground">
-                      We accept cash on delivery and bank transfers. Payment details will be provided
-                      when you confirm your order.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
