@@ -91,11 +91,11 @@ const Contact = () => {
                   </h3>
                   <div className="font-inter text-muted-foreground space-y-1">
                     {info.details.map((detail, i) => (
-                      <p key={i}>
+                      <p key={i} className="break-words">
                         {info.link && i === 0 ? (
                           <a
                             href={info.link}
-                            className="hover:text-primary transition-colors"
+                            className="hover:text-primary transition-colors break-words"
                           >
                             {detail}
                           </a>

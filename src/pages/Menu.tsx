@@ -380,6 +380,91 @@ const Menu = () => {
         },
       ],
     },
+    {
+      category: "Drinks & Juices",
+      items: [
+        {
+          name: "Palm Wine",
+          description: "Refreshing traditional palm wine",
+          image: juice,
+          variations: [{ name: "Regular", price: "15 QAR" }],
+        },
+        {
+          name: "Hibiscus Drink (Zobo / Sobolo / Bissap)",
+          description: "Traditional hibiscus drink served chilled",
+          image: juice,
+          variations: [{ name: "Regular", price: "12 QAR" }],
+        },
+        {
+          name: "Avocado Juice",
+          description: "Creamy and smooth avocado juice",
+          image: juice,
+          variations: [{ name: "Regular", price: "15 QAR" }],
+        },
+        {
+          name: "Watermelon Juice",
+          description: "Fresh and refreshing watermelon juice",
+          image: juice,
+          variations: [{ name: "Regular", price: "12 QAR" }],
+        },
+        {
+          name: "Banana Juice",
+          description: "Creamy banana juice",
+          image: juice,
+          variations: [{ name: "Regular", price: "12 QAR" }],
+        },
+        {
+          name: "Fresh Orange Juice",
+          description: "Freshly squeezed orange juice",
+          image: juice,
+          variations: [{ name: "Regular", price: "12 QAR" }],
+        },
+      ],
+    },
+    {
+      category: "Fresh Juice Mixes",
+      items: [
+        {
+          name: "Orange + Pineapple",
+          description: "Tropical blend of orange and pineapple",
+          image: juice,
+          variations: [{ name: "Regular", price: "15 QAR" }],
+        },
+        {
+          name: "Mango + Orange",
+          description: "Sweet and tangy mango orange mix",
+          image: juice,
+          variations: [{ name: "Regular", price: "15 QAR" }],
+        },
+        {
+          name: "Watermelon + Pineapple",
+          description: "Refreshing tropical fruit combination",
+          image: juice,
+          variations: [{ name: "Regular", price: "15 QAR" }],
+        },
+        {
+          name: "Apple + Carrot",
+          description: "Healthy and nutritious blend",
+          image: juice,
+          variations: [{ name: "Regular", price: "20 QAR" }],
+        },
+        {
+          name: "Pineapple + Ginger",
+          description: "Zesty pineapple with a ginger kick",
+          image: juice,
+          variations: [{ name: "Regular", price: "15 QAR" }],
+        },
+        {
+          name: "Lemon + Ginger",
+          description: "Refreshing citrus with warming ginger",
+          image: juice,
+          variations: [
+            { name: "Regular", price: "15 QAR" },
+            { name: "Small", price: "10 QAR" },
+          ],
+        },
+      ],
+    },
   ];
 
   return (
