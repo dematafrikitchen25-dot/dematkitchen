@@ -61,7 +61,7 @@ const Home = () => {
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="font-playfair text-3xl md:text-5xl font-bold text-primary-foreground mb-6 animate-fade-in-up">
+          <h1 className="font-playfair text-3xl md:text-5xl font-bold text-primary-foreground mb-6 animate-fade-in-up max-w-4xl mx-auto">
             Authentic Nigerian & African Soups and Foods in Qatar
           </h1>
           <p className="font-inter text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto animate-fade-in">
