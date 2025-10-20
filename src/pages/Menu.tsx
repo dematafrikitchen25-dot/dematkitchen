@@ -10,6 +10,11 @@ import stewBeef from "@/assets/stew-beef.jpg";
 import whiteSoup from "@/assets/white-soup.jpg";
 import egusiSoup from "@/assets/egusi-soup.jpg";
 import ogbonoSoup from "@/assets/ogbono-soup.jpg";
+import poundedYam from "@/assets/pounded-yam.jpg";
+import groundnutSoup from "@/assets/groundnut-soup.jpg";
+import edikaikongSoup from "@/assets/edikaikong-soup.jpg";
+import afangSoup from "@/assets/afang-soup.jpg";
+import okraSoup from "@/assets/okra-soup.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
@@ -37,19 +42,19 @@ const Menu = () => {
         {
           name: "Afang Soup",
           description: "Traditional Nigerian soup made with afang leaves and assorted proteins",
-          image: soupDish,
+          image: afangSoup,
           variations: [{ name: "Regular", price: "40 QAR" }],
         },
         {
           name: "Edikaikong Soup",
           description: "Delicious vegetable soup with waterleaf and fluted pumpkin leaves",
-          image: soupDish,
+          image: edikaikongSoup,
           variations: [{ name: "Regular", price: "40 QAR" }],
         },
         {
           name: "Groundnut (Peanut) Soup",
           description: "Rich and creamy soup made with groundnuts and assorted proteins",
-          image: soupDish,
+          image: groundnutSoup,
           variations: [{ name: "Regular", price: "40 QAR" }],
         },
         {
@@ -75,7 +80,7 @@ const Menu = () => {
         {
           name: "Okra Soup",
           description: "Classic okra soup with your choice of protein",
-          image: soupDish,
+          image: okraSoup,
           variations: [
             { name: "Regular", price: "25 QAR" },
             { name: "Small Pot", price: "200 QAR" },
@@ -124,7 +129,7 @@ const Menu = () => {
         {
           name: "Pounded Yam",
           description: "Smooth pounded yam served with your choice of soup",
-          image: mainDish,
+          image: poundedYam,
           variations: [
             { name: "Single", price: "25 QAR" },
             { name: "Double", price: "40 QAR" },
