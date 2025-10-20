@@ -5,6 +5,11 @@ import { useState } from "react";
 import soupDish from "@/assets/soup-dish.jpg";
 import mainDish from "@/assets/main-dish.jpg";
 import juice from "@/assets/juice.jpg";
+import blackSoup from "@/assets/black-soup.jpg";
+import stewBeef from "@/assets/stew-beef.jpg";
+import whiteSoup from "@/assets/white-soup.jpg";
+import egusiSoup from "@/assets/egusi-soup.jpg";
+import ogbonoSoup from "@/assets/ogbono-soup.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
@@ -16,7 +21,7 @@ const Menu = () => {
         {
           name: "Egusi Soup",
           description: "Ground melon seed soup served with proteins",
-          image: soupDish,
+          image: egusiSoup,
           variations: [
             { name: "Regular", price: "25 QAR" },
             { name: "Small Pot", price: "200 QAR" },
@@ -26,7 +31,7 @@ const Menu = () => {
         {
           name: "White Soup (Ofe Nsala)",
           description: "Light, clear soup made with proteins and aromatic spices",
-          image: soupDish,
+          image: whiteSoup,
           variations: [{ name: "Regular", price: "30 QAR" }],
         },
         {
@@ -50,7 +55,7 @@ const Menu = () => {
         {
           name: "Ogbono Soup",
           description: "Traditional soup with African wild mango seeds",
-          image: soupDish,
+          image: ogbonoSoup,
           variations: [
             { name: "Regular", price: "25 QAR" },
             { name: "Small Pot", price: "200 QAR" },
@@ -102,13 +107,13 @@ const Menu = () => {
         {
           name: "Black Soup",
           description: "Thick herbal soup made with assorted meats and native spices",
-          image: soupDish,
+          image: blackSoup,
           variations: [{ name: "Regular", price: "20 QAR" }],
         },
         {
           name: "Stew with Beef",
           description: "Tomato-based Nigerian stew cooked with beef and spices",
-          image: soupDish,
+          image: stewBeef,
           variations: [{ name: "Regular", price: "28 QAR" }],
         },
       ],
