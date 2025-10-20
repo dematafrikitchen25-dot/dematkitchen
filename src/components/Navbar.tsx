@@ -1,11 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { toZonedTime } from "date-fns-tz";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenNow, setIsOpenNow] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const checkIfOpen = () => {
+      const qatarTime = toZonedTime(new Date(), "Asia/Qatar");
+      const day = qatarTime.getDay();
+      const hours = qatarTime.getHours();
+      const minutes = qatarTime.getMinutes();
+      const currentTime = hours + minutes / 60;
+
+      let openTime: number;
+      let closeTime: number;
+
+      if (day === 5) {
+        openTime = 12;
+        closeTime = 23;
+      } else {
+        openTime = 10;
+        closeTime = 23;
+      }
+
+      setIsOpenNow(currentTime >= openTime && currentTime < closeTime);
+    };
+
+    checkIfOpen();
+    const interval = setInterval(checkIfOpen, 60000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -17,8 +47,9 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md shadow-card border-b border-border">
-      <div className="container mx-auto px-4">
+    <>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md shadow-card border-b border-border">
+        <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
@@ -44,7 +75,7 @@ const Navbar = () => {
             ))}
             <Button variant="order" size="default" asChild>
               <a
-                href="https://wa.me/97400000000"
+                href="https://wa.me/97471962487"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -82,7 +113,7 @@ const Navbar = () => {
               ))}
               <Button variant="order" size="default" className="w-full" asChild>
                 <a
-                  href="https://wa.me/97400000000"
+                  href="https://wa.me/97471962487"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -94,6 +125,17 @@ const Navbar = () => {
         )}
       </div>
     </nav>
+    
+    {/* Open/Closed Indicator */}
+    <div className="fixed top-20 left-0 right-0 z-40 bg-card border-b border-border shadow-sm">
+      <div className="container mx-auto px-4 py-2 flex items-center justify-center gap-2">
+        <div className={`w-2 h-2 rounded-full ${isOpenNow ? 'bg-green-500 animate-pulse' : 'bg-red-500'}`} />
+        <span className="text-sm font-medium text-foreground">
+          {isOpenNow ? 'Open Now' : 'Closed Now'}
+        </span>
+      </div>
+    </div>
+    </>
   );
 };
 

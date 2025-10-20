@@ -24,6 +24,30 @@ const Menu = () => {
           ],
         },
         {
+          name: "White Soup (Ofe Nsala)",
+          description: "Light, clear soup made with proteins and aromatic spices",
+          image: soupDish,
+          variations: [{ name: "Regular", price: "30 QAR" }],
+        },
+        {
+          name: "Afang Soup",
+          description: "Traditional Nigerian soup made with afang leaves and assorted proteins",
+          image: soupDish,
+          variations: [{ name: "Regular", price: "40 QAR" }],
+        },
+        {
+          name: "Edikaikong Soup",
+          description: "Delicious vegetable soup with waterleaf and fluted pumpkin leaves",
+          image: soupDish,
+          variations: [{ name: "Regular", price: "40 QAR" }],
+        },
+        {
+          name: "Groundnut (Peanut) Soup",
+          description: "Rich and creamy soup made with groundnuts and assorted proteins",
+          image: soupDish,
+          variations: [{ name: "Regular", price: "40 QAR" }],
+        },
+        {
           name: "Ogbono Soup",
           description: "Traditional soup with African wild mango seeds",
           image: soupDish,
@@ -62,6 +86,30 @@ const Menu = () => {
             { name: "Small Pot", price: "220 QAR" },
             { name: "Big Pot", price: "270 QAR" },
           ],
+        },
+        {
+          name: "Plantain Porridge",
+          description: "Plantain cooked with palm oil, spices, and vegetables",
+          image: soupDish,
+          variations: [{ name: "Regular", price: "31 QAR" }],
+        },
+        {
+          name: "Ogbono & Egusi Mix",
+          description: "Combination of ground ogbono and egusi with meat or fish",
+          image: soupDish,
+          variations: [{ name: "Regular", price: "30 QAR" }],
+        },
+        {
+          name: "Black Soup",
+          description: "Thick herbal soup made with assorted meats and native spices",
+          image: soupDish,
+          variations: [{ name: "Regular", price: "20 QAR" }],
+        },
+        {
+          name: "Stew with Beef",
+          description: "Tomato-based Nigerian stew cooked with beef and spices",
+          image: soupDish,
+          variations: [{ name: "Regular", price: "28 QAR" }],
         },
       ],
     },
@@ -389,6 +437,53 @@ const Menu = () => {
       ],
     },
     {
+      category: "Smoothies & Exotic Mixes",
+      items: [
+        {
+          name: "Pineapple + Mango + Passionfruit",
+          description: "Exotic tropical blend with three premium fruits",
+          image: juice,
+          variations: [{ name: "Regular", price: "18 QAR" }],
+        },
+        {
+          name: "Orange + Mango + Pineapple",
+          description: "Triple tropical fruit smoothie with rich flavors",
+          image: juice,
+          variations: [{ name: "Regular", price: "18 QAR" }],
+        },
+        {
+          name: "Watermelon + Pineapple + Mint",
+          description: "Refreshing smoothie with cooling mint finish",
+          image: juice,
+          variations: [{ name: "Regular", price: "18 QAR" }],
+        },
+        {
+          name: "Coconut Water + Pineapple + Lemon",
+          description: "Hydrating coconut water blend with tropical fruits",
+          image: juice,
+          variations: [{ name: "Regular", price: "18 QAR" }],
+        },
+        {
+          name: "Papaya + Pineapple + Orange",
+          description: "Vitamin-rich tropical smoothie with papaya goodness",
+          image: juice,
+          variations: [{ name: "Regular", price: "18 QAR" }],
+        },
+        {
+          name: "Banana + Mango + Pineapple",
+          description: "Creamy and sweet tropical fruit smoothie blend",
+          image: juice,
+          variations: [{ name: "Regular", price: "18 QAR" }],
+        },
+        {
+          name: "Pineapple + Guava + Orange",
+          description: "Exotic smoothie with unique guava flavor profile",
+          image: juice,
+          variations: [{ name: "Regular", price: "18 QAR" }],
+        },
+      ],
+    },
+    {
       category: "Fresh Juice Mixes",
       items: [
         {
@@ -435,7 +530,7 @@ const Menu = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-32">
       {/* Hero Section */}
       <section className="bg-gradient-primary py-20">
         <div className="container mx-auto px-4 text-center">
@@ -512,7 +607,7 @@ const Menu = () => {
                           {/* Order Now Button */}
                           <Button variant="order" size="sm" asChild className="w-full">
                             <a
-                              href={`https://wa.me/97400000000?text=Hi! I'd like to order: ${item.name} (${selectedVariation.name}) - ${selectedVariation.price}`}
+                              href={`https://wa.me/97471962487?text=Hi! I'd like to order: ${encodeURIComponent(item.name)} (${encodeURIComponent(selectedVariation.name)}) - ${encodeURIComponent(selectedVariation.price)}`}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="flex items-center gap-2 justify-center"
@@ -543,7 +638,7 @@ const Menu = () => {
           </p>
           <Button variant="order" size="lg" asChild>
             <a
-              href="https://wa.me/97400000000"
+              href="https://wa.me/97471962487"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 mx-auto"
