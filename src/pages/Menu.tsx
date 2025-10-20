@@ -15,6 +15,11 @@ import groundnutSoup from "@/assets/groundnut-soup.jpg";
 import edikaikongSoup from "@/assets/edikaikong-soup.jpg";
 import afangSoup from "@/assets/afang-soup.jpg";
 import okraSoup from "@/assets/okra-soup.jpg";
+import mangoOrange from "@/assets/mango-orange.jpg";
+import yellowGarri from "@/assets/yellow-garri.jpg";
+import plantainPorridge from "@/assets/plantain-porridge.jpg";
+import ogbonoEgusi from "@/assets/ogbono-egusi.jpg";
+import bangaSoup from "@/assets/banga-soup.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
@@ -90,7 +95,7 @@ const Menu = () => {
         {
           name: "Banga Soup",
           description: "Rich palm fruit soup with traditional spices",
-          image: soupDish,
+          image: bangaSoup,
           variations: [
             { name: "Regular", price: "30 QAR" },
             { name: "Small Pot", price: "220 QAR" },
@@ -100,13 +105,13 @@ const Menu = () => {
         {
           name: "Plantain Porridge",
           description: "Plantain cooked with palm oil, spices, and vegetables",
-          image: soupDish,
+          image: plantainPorridge,
           variations: [{ name: "Regular", price: "31 QAR" }],
         },
         {
           name: "Ogbono & Egusi Mix",
           description: "Combination of ground ogbono and egusi with meat or fish",
-          image: soupDish,
+          image: ogbonoEgusi,
           variations: [{ name: "Regular", price: "30 QAR" }],
         },
         {
@@ -138,7 +143,7 @@ const Menu = () => {
         {
           name: "Eba (Garri)",
           description: "Traditional cassava swallow",
-          image: mainDish,
+          image: yellowGarri,
           variations: [
             { name: "Single", price: "20 QAR" },
             { name: "Double", price: "35 QAR" },
@@ -505,7 +510,7 @@ const Menu = () => {
         {
           name: "Mango + Orange",
           description: "Sweet and tangy mango orange mix",
-          image: juice,
+          image: mangoOrange,
           variations: [{ name: "Regular", price: "15 QAR" }],
         },
         {
