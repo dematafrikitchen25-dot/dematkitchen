@@ -27,6 +27,16 @@ import whiteRicePepperSoup from "@/assets/white-rice-pepper-soup.jpg";
 import nativeJollof from "@/assets/native-jollof.jpg";
 import assortedPepperSoup from "@/assets/assorted-pepper-soup.jpg";
 import chickenPepperSoup from "@/assets/chicken-pepper-soup.jpg";
+import turkeyBig from "@/assets/turkey-big.jpg";
+import smokedTitusFish from "@/assets/smoked-titus-fish.jpg";
+import friedFish from "@/assets/fried-fish.jpg";
+import friedChicken from "@/assets/fried-chicken.jpg";
+import shakiBeefTripe from "@/assets/shaki-beef-tripe.jpg";
+import goatMeatPepperSoup from "@/assets/goat-meat-pepper-soup.jpg";
+import riceFlour from "@/assets/rice-flour.jpg";
+import semolina from "@/assets/semolina.jpg";
+import amala from "@/assets/amala.jpg";
+import poundoYam from "@/assets/poundo-yam.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
@@ -168,25 +178,25 @@ const Menu = () => {
         {
           name: "Poundo Yam",
           description: "Traditional pounded yam powder swallow",
-          image: mainDish,
+          image: poundoYam,
           variations: [{ name: "Regular", price: "10 QAR" }],
         },
         {
           name: "Amala (Yam Fufu)",
           description: "Traditional yam flour swallow",
-          image: mainDish,
+          image: amala,
           variations: [{ name: "Regular", price: "15 QAR" }],
         },
         {
           name: "Semolina",
           description: "Smooth semolina swallow",
-          image: mainDish,
+          image: semolina,
           variations: [{ name: "Regular", price: "10 QAR" }],
         },
         {
           name: "Rice Flour / Ground Rice",
           description: "Rice flour swallow",
-          image: mainDish,
+          image: riceFlour,
           variations: [{ name: "Regular", price: "10 QAR" }],
         },
       ],
@@ -294,7 +304,7 @@ const Menu = () => {
         {
           name: "Goat Meat Pepper Soup",
           description: "Rich pepper soup with goat meat",
-          image: soupDish,
+          image: goatMeatPepperSoup,
           variations: [{ name: "Regular", price: "40 QAR" }],
         },
       ],
@@ -305,31 +315,31 @@ const Menu = () => {
         {
           name: "Shaki (Beef Tripe)",
           description: "Tender beef tripe, perfectly cooked",
-          image: mainDish,
+          image: shakiBeefTripe,
           variations: [{ name: "Regular", price: "10 QAR" }],
         },
         {
           name: "Fried Chicken",
           description: "Crispy fried chicken pieces",
-          image: mainDish,
+          image: friedChicken,
           variations: [{ name: "Regular", price: "15 QAR" }],
         },
         {
           name: "Fried Fish",
           description: "Golden fried fish",
-          image: mainDish,
+          image: friedFish,
           variations: [{ name: "Regular", price: "15 QAR" }],
         },
         {
           name: "Smoked Titus Fish",
           description: "Premium smoked Titus fish",
-          image: mainDish,
+          image: smokedTitusFish,
           variations: [{ name: "Regular", price: "25 QAR" }],
         },
         {
           name: "Turkey (Big)",
           description: "Large portion of tender turkey",
-          image: mainDish,
+          image: turkeyBig,
           variations: [{ name: "Regular", price: "20 QAR" }],
         },
         {
