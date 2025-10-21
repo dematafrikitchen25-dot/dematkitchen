@@ -70,7 +70,7 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
             <Button variant="order" size="lg" asChild>
               <a
-                href="https://wa.me/97400000000"
+                href="https://wa.me/97471962487"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -168,7 +168,7 @@ const Home = () => {
           </p>
           <Button variant="order" size="lg" asChild>
             <a
-              href="https://wa.me/97400000000"
+              href="https://wa.me/97471962487"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 mx-auto"

@@ -43,6 +43,7 @@ import boiledYams from "@/assets/boiled-yams.jpg";
 import boiledPlantain from "@/assets/boiled-plantain.jpg";
 import friedBeef from "@/assets/fried-beef.jpg";
 import roastedTurkey from "@/assets/roasted-turkey.jpg";
+import suyaPlatter from "@/assets/suya-platter.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
@@ -232,7 +233,7 @@ const Menu = () => {
         {
           name: "Suya Platter",
           description: "Spiced grilled meat skewers with sides",
-          image: mainDish,
+          image: suyaPlatter,
           variations: [
             { name: "Beef", price: "60 QAR" },
             { name: "Chicken", price: "55 QAR" },
