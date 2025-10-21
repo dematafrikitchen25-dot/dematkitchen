@@ -20,6 +20,13 @@ import yellowGarri from "@/assets/yellow-garri.jpg";
 import plantainPorridge from "@/assets/plantain-porridge.jpg";
 import ogbonoEgusi from "@/assets/ogbono-egusi.jpg";
 import bangaSoup from "@/assets/banga-soup.jpg";
+import catfishPepperSoup from "@/assets/catfish-pepper-soup.jpg";
+import waakye from "@/assets/waakye.jpg";
+import spaghettiJollof from "@/assets/spaghetti-jollof.jpg";
+import whiteRicePepperSoup from "@/assets/white-rice-pepper-soup.jpg";
+import nativeJollof from "@/assets/native-jollof.jpg";
+import assortedPepperSoup from "@/assets/assorted-pepper-soup.jpg";
+import chickenPepperSoup from "@/assets/chicken-pepper-soup.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
@@ -158,6 +165,30 @@ const Menu = () => {
             { name: "Double", price: "37 QAR" },
           ],
         },
+        {
+          name: "Poundo Yam",
+          description: "Traditional pounded yam powder swallow",
+          image: mainDish,
+          variations: [{ name: "Regular", price: "10 QAR" }],
+        },
+        {
+          name: "Amala (Yam Fufu)",
+          description: "Traditional yam flour swallow",
+          image: mainDish,
+          variations: [{ name: "Regular", price: "15 QAR" }],
+        },
+        {
+          name: "Semolina",
+          description: "Smooth semolina swallow",
+          image: mainDish,
+          variations: [{ name: "Regular", price: "10 QAR" }],
+        },
+        {
+          name: "Rice Flour / Ground Rice",
+          description: "Rice flour swallow",
+          image: mainDish,
+          variations: [{ name: "Regular", price: "10 QAR" }],
+        },
       ],
     },
     {
@@ -186,7 +217,7 @@ const Menu = () => {
         {
           name: "Waakye",
           description: "Rice and beans dish with special sauces",
-          image: mainDish,
+          image: waakye,
           variations: [
             { name: "Regular", price: "30 QAR" },
             { name: "With Protein", price: "45 QAR" },
@@ -210,7 +241,7 @@ const Menu = () => {
         {
           name: "Native Jollof Rice",
           description: "Traditional Jollof rice with authentic spices",
-          image: mainDish,
+          image: nativeJollof,
           variations: [{ name: "Regular", price: "25 QAR" }],
         },
         {
@@ -222,19 +253,19 @@ const Menu = () => {
         {
           name: "White Rice with Pepper Soup Side",
           description: "Steamed white rice served with pepper soup",
-          image: mainDish,
+          image: whiteRicePepperSoup,
           variations: [{ name: "Regular", price: "35 QAR" }],
         },
         {
           name: "Spaghetti Jollof Only",
           description: "Jollof-style spaghetti with spices",
-          image: mainDish,
+          image: spaghettiJollof,
           variations: [{ name: "Regular", price: "40 QAR" }],
         },
         {
           name: "Waakye",
           description: "Rice and beans dish with special sauces",
-          image: mainDish,
+          image: waakye,
           variations: [{ name: "Regular", price: "30 QAR" }],
         },
       ],
@@ -245,19 +276,19 @@ const Menu = () => {
         {
           name: "Catfish Pepper Soup",
           description: "Spicy pepper soup with fresh catfish",
-          image: soupDish,
+          image: catfishPepperSoup,
           variations: [{ name: "Regular", price: "40 QAR" }],
         },
         {
           name: "Assorted Pepper Soup",
           description: "Mixed meat pepper soup with traditional spices",
-          image: soupDish,
+          image: assortedPepperSoup,
           variations: [{ name: "Regular", price: "38 QAR" }],
         },
         {
           name: "Chicken Pepper Soup",
           description: "Aromatic pepper soup with tender chicken",
-          image: soupDish,
+          image: chickenPepperSoup,
           variations: [{ name: "Regular", price: "36 QAR" }],
         },
         {
