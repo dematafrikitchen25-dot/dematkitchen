@@ -37,6 +37,12 @@ import riceFlour from "@/assets/rice-flour.jpg";
 import semolina from "@/assets/semolina.jpg";
 import amala from "@/assets/amala.jpg";
 import poundoYam from "@/assets/poundo-yam.jpg";
+import jollofRice from "@/assets/jollof-rice.jpg";
+import friedPlantainDodo from "@/assets/fried-plantain-dodo.jpg";
+import boiledYams from "@/assets/boiled-yams.jpg";
+import boiledPlantain from "@/assets/boiled-plantain.jpg";
+import friedBeef from "@/assets/fried-beef.jpg";
+import roastedTurkey from "@/assets/roasted-turkey.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
@@ -87,16 +93,6 @@ const Menu = () => {
             { name: "Regular", price: "25 QAR" },
             { name: "Small Pot", price: "200 QAR" },
             { name: "Big Pot", price: "250 QAR" },
-          ],
-        },
-        {
-          name: "Pepper Soup",
-          description: "Spicy and aromatic soup with meat or fish",
-          image: soupDish,
-          variations: [
-            { name: "Regular", price: "30 QAR" },
-            { name: "Small Pot", price: "220 QAR" },
-            { name: "Big Pot", price: "270 QAR" },
           ],
         },
         {
@@ -207,7 +203,7 @@ const Menu = () => {
         {
           name: "Jollof Rice",
           description: "Signature one-pot rice dish with tomatoes and spices",
-          image: mainDish,
+          image: jollofRice,
           variations: [
             { name: "Regular", price: "35 QAR" },
             { name: "With Chicken", price: "50 QAR" },
@@ -257,7 +253,7 @@ const Menu = () => {
         {
           name: "Jollof Rice Only",
           description: "Classic Jollof rice without proteins",
-          image: mainDish,
+          image: jollofRice,
           variations: [{ name: "Regular", price: "20 QAR" }],
         },
         {
@@ -271,12 +267,6 @@ const Menu = () => {
           description: "Jollof-style spaghetti with spices",
           image: spaghettiJollof,
           variations: [{ name: "Regular", price: "40 QAR" }],
-        },
-        {
-          name: "Waakye",
-          description: "Rice and beans dish with special sauces",
-          image: waakye,
-          variations: [{ name: "Regular", price: "30 QAR" }],
         },
       ],
     },
@@ -345,13 +335,13 @@ const Menu = () => {
         {
           name: "Roasted Turkey Only",
           description: "Perfectly roasted turkey",
-          image: mainDish,
+          image: roastedTurkey,
           variations: [{ name: "Regular", price: "25 QAR" }],
         },
         {
           name: "Fried Beef",
           description: "Tender fried beef pieces",
-          image: mainDish,
+          image: friedBeef,
           variations: [{ name: "Regular", price: "15 QAR" }],
         },
       ],
@@ -362,19 +352,19 @@ const Menu = () => {
         {
           name: "Boiled Plantain",
           description: "Perfectly boiled plantain",
-          image: mainDish,
+          image: boiledPlantain,
           variations: [{ name: "Regular", price: "10 QAR" }],
         },
         {
           name: "Boiled Yams",
           description: "Soft boiled yams",
-          image: mainDish,
+          image: boiledYams,
           variations: [{ name: "Regular", price: "10 QAR" }],
         },
         {
           name: "Fried Plantain (Dodo)",
           description: "Sweet fried plantain",
-          image: mainDish,
+          image: friedPlantainDodo,
           variations: [{ name: "Regular", price: "10 QAR" }],
         },
         {
