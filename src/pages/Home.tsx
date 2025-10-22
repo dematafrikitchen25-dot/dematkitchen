@@ -3,9 +3,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MessageCircle, UtensilsCrossed, Leaf, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-bg.png";
-import soupDish from "@/assets/soup-dish.jpg";
-import mainDish from "@/assets/main-dish.jpg";
-import juice from "@/assets/juice.jpg";
+import soupDish from "@/assets/egusi-soup.jpg";
+import mainDish from "@/assets/jollof-rice.jpg";
+import juice from "@/assets/fresh-orange-juice.jpg";
 
 const Home = () => {
   const features = [

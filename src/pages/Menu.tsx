@@ -63,6 +63,11 @@ import avocadoJuice from "@/assets/avocado-juice.jpg";
 import palmWine from "@/assets/palm-wine.jpg";
 import puffPuff from "@/assets/puff-puff.jpg";
 import chinChin from "@/assets/chin-chin.jpg";
+import pineappleMangoPassionfruit from "@/assets/pineapple-mango-passionfruit.jpg";
+import lemonGinger from "@/assets/lemon-ginger.jpg";
+import pineappleGinger from "@/assets/pineapple-ginger.jpg";
+import appleCarrot from "@/assets/apple-carrot.jpg";
+import watermelonPineapple from "@/assets/watermelon-pineapple.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
@@ -508,7 +513,7 @@ const Menu = () => {
         {
           name: "Pineapple + Mango + Passionfruit",
           description: "Exotic tropical blend with three premium fruits",
-          image: juice,
+          image: pineappleMangoPassionfruit,
           variations: [{ name: "Regular", price: "18 QAR" }],
         },
         {
@@ -520,7 +525,7 @@ const Menu = () => {
         {
           name: "Watermelon + Pineapple + Mint",
           description: "Refreshing smoothie with cooling mint finish",
-          image: juice,
+          image: watermelonPineapple,
           variations: [{ name: "Regular", price: "18 QAR" }],
         },
         {
@@ -567,25 +572,25 @@ const Menu = () => {
         {
           name: "Watermelon + Pineapple",
           description: "Refreshing tropical fruit combination",
-          image: juice,
+          image: watermelonPineapple,
           variations: [{ name: "Regular", price: "15 QAR" }],
         },
         {
           name: "Apple + Carrot",
           description: "Healthy and nutritious blend",
-          image: juice,
+          image: appleCarrot,
           variations: [{ name: "Regular", price: "20 QAR" }],
         },
         {
           name: "Pineapple + Ginger",
           description: "Zesty pineapple with a ginger kick",
-          image: juice,
+          image: pineappleGinger,
           variations: [{ name: "Regular", price: "15 QAR" }],
         },
         {
           name: "Lemon + Ginger",
           description: "Refreshing citrus with warming ginger",
-          image: juice,
+          image: lemonGinger,
           variations: [
             { name: "Regular", price: "15 QAR" },
             { name: "Small", price: "10 QAR" },
