@@ -44,6 +44,16 @@ import boiledPlantain from "@/assets/boiled-plantain.jpg";
 import friedBeef from "@/assets/fried-beef.jpg";
 import roastedTurkey from "@/assets/roasted-turkey.jpg";
 import suyaPlatter from "@/assets/suya-platter.jpg";
+import coleslawSalad from "@/assets/coleslaw-salad.jpg";
+import veggieSalad from "@/assets/veggie-salad.jpg";
+import frenchFries from "@/assets/french-fries.jpg";
+import ewaAgoyin from "@/assets/ewa-agoyin.png";
+import beansAndStewOnly from "@/assets/beans-and-stew-only.jpg";
+import moinMoinOnly from "@/assets/moin-moin-only.jpg";
+import friedYamWithEggSauce from "@/assets/fried-yam-with-egg-sauce.jpg";
+import boiledYamAndEggSauce from "@/assets/boiled-yam-and-egg-sauce.jpg";
+import friedYam from "@/assets/fried-yam.jpg";
+import roastedPlantainBoli from "@/assets/roasted-plantain-boli.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
@@ -371,61 +381,61 @@ const Menu = () => {
         {
           name: "Roasted Plantain (Boil)",
           description: "Traditional roasted plantain",
-          image: mainDish,
+          image: roastedPlantainBoli,
           variations: [{ name: "Regular", price: "20 QAR" }],
         },
         {
           name: "Fried Yam",
           description: "Crispy fried yam",
-          image: mainDish,
+          image: friedYam,
           variations: [{ name: "Regular", price: "15 QAR" }],
         },
         {
           name: "Boiled Yam And Egg Sauce",
           description: "Boiled yam with savory egg sauce",
-          image: mainDish,
+          image: boiledYamAndEggSauce,
           variations: [{ name: "Regular", price: "40 QAR" }],
         },
         {
           name: "Fried Yam With Egg Sauce",
           description: "Fried yam with savory egg sauce",
-          image: mainDish,
+          image: friedYamWithEggSauce,
           variations: [{ name: "Regular", price: "40 QAR" }],
         },
         {
           name: "Moin Moin Only",
           description: "Steamed bean pudding",
-          image: mainDish,
+          image: moinMoinOnly,
           variations: [{ name: "Regular", price: "10 QAR" }],
         },
         {
           name: "Beans And Stew Only",
           description: "Beans served with rich stew",
-          image: mainDish,
+          image: beansAndStewOnly,
           variations: [{ name: "Regular", price: "25 QAR" }],
         },
         {
           name: "Beans Porridge (Beans + Sauce + Plantain)",
           description: "Traditional beans with special sauce and plantain",
-          image: mainDish,
+          image: ewaAgoyin,
           variations: [{ name: "Regular", price: "30 QAR" }],
         },
         {
           name: "French Fries",
           description: "Crispy golden french fries",
-          image: mainDish,
+          image: frenchFries,
           variations: [{ name: "Regular", price: "10 QAR" }],
         },
         {
           name: "Veggie Salad",
           description: "Fresh mixed vegetable salad",
-          image: mainDish,
+          image: veggieSalad,
           variations: [{ name: "Regular", price: "10 QAR" }],
         },
         {
           name: "Coleslaw Salad",
           description: "Creamy coleslaw salad",
-          image: mainDish,
+          image: coleslawSalad,
           variations: [{ name: "Regular", price: "10 QAR" }],
         },
         {
