@@ -54,6 +54,15 @@ import friedYamWithEggSauce from "@/assets/fried-yam-with-egg-sauce.jpg";
 import boiledYamAndEggSauce from "@/assets/boiled-yam-and-egg-sauce.jpg";
 import friedYam from "@/assets/fried-yam.jpg";
 import roastedPlantainBoli from "@/assets/roasted-plantain-boli.jpg";
+import friedRice from "@/assets/fried-rice.jpg";
+import orangePineapple from "@/assets/orange-pineapple.jpg";
+import freshOrangeJuice from "@/assets/fresh-orange-juice.jpg";
+import bananaJuice from "@/assets/banana-juice.jpg";
+import watermelonJuice from "@/assets/watermelon-juice.jpg";
+import avocadoJuice from "@/assets/avocado-juice.jpg";
+import palmWine from "@/assets/palm-wine.jpg";
+import puffPuff from "@/assets/puff-puff.jpg";
+import chinChin from "@/assets/chin-chin.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
@@ -224,7 +233,7 @@ const Menu = () => {
         {
           name: "Fried Rice",
           description: "Flavorful fried rice with mixed vegetables",
-          image: mainDish,
+          image: friedRice,
           variations: [
             { name: "Regular", price: "35 QAR" },
             { name: "With Chicken", price: "50 QAR" },
@@ -441,13 +450,13 @@ const Menu = () => {
         {
           name: "Chin Chin",
           description: "Crunchy fried snack",
-          image: mainDish,
+          image: chinChin,
           variations: [{ name: "Regular", price: "12 QAR" }],
         },
         {
           name: "Puff Puff",
           description: "Sweet fried dough balls",
-          image: mainDish,
+          image: puffPuff,
           variations: [{ name: "Regular", price: "10 QAR" }],
         },
       ],
@@ -458,7 +467,7 @@ const Menu = () => {
         {
           name: "Palm Wine",
           description: "Refreshing traditional palm wine",
-          image: juice,
+          image: palmWine,
           variations: [{ name: "Regular", price: "15 QAR" }],
         },
         {
@@ -470,25 +479,25 @@ const Menu = () => {
         {
           name: "Avocado Juice",
           description: "Creamy and smooth avocado juice",
-          image: juice,
+          image: avocadoJuice,
           variations: [{ name: "Regular", price: "15 QAR" }],
         },
         {
           name: "Watermelon Juice",
           description: "Fresh and refreshing watermelon juice",
-          image: juice,
+          image: watermelonJuice,
           variations: [{ name: "Regular", price: "12 QAR" }],
         },
         {
           name: "Banana Juice",
           description: "Creamy banana juice",
-          image: juice,
+          image: bananaJuice,
           variations: [{ name: "Regular", price: "12 QAR" }],
         },
         {
           name: "Fresh Orange Juice",
           description: "Freshly squeezed orange juice",
-          image: juice,
+          image: freshOrangeJuice,
           variations: [{ name: "Regular", price: "12 QAR" }],
         },
       ],
@@ -546,7 +555,7 @@ const Menu = () => {
         {
           name: "Orange + Pineapple",
           description: "Tropical blend of orange and pineapple",
-          image: juice,
+          image: orangePineapple,
           variations: [{ name: "Regular", price: "15 QAR" }],
         },
         {
