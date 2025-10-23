@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toZonedTime } from "date-fns-tz";
+import logo from "@/assets/demat-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,8 +53,13 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <h1 className="font-playfair text-xl md:text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent transition-all duration-300 group-hover:scale-105">
+          <Link to="/" className="flex items-center space-x-3 group">
+            <img 
+              src={logo} 
+              alt="Demat African Kitchen Logo" 
+              className="h-14 w-14 object-contain transition-all duration-300 group-hover:scale-110"
+            />
+            <h1 className="font-playfair text-lg md:text-xl font-bold bg-gradient-primary bg-clip-text text-transparent transition-all duration-300">
               Demat African Kitchen
             </h1>
           </Link>
@@ -75,7 +81,7 @@ const Navbar = () => {
             ))}
             <Button variant="order" size="default" asChild>
               <a
-                href="https://wa.me/97471962487"
+                href="https://wa.me/97433254965"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -113,7 +119,7 @@ const Navbar = () => {
               ))}
               <Button variant="order" size="default" className="w-full" asChild>
                 <a
-                  href="https://wa.me/97471962487"
+                  href="https://wa.me/97433254965"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

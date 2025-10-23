@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { MessageCircle, UtensilsCrossed, Leaf, Clock } from "lucide-react";
+import { MessageCircle, UtensilsCrossed, Leaf, Clock, Star, Quote } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-bg.png";
 import soupDish from "@/assets/egusi-soup.jpg";
@@ -49,6 +49,45 @@ const Home = () => {
     },
   ];
 
+  const reviews = [
+    {
+      name: "Amina K.",
+      rating: 5,
+      review: "The best African food in Qatar! The egusi soup tastes exactly like home. I order every week!",
+      date: "2 weeks ago"
+    },
+    {
+      name: "Mohammed A.",
+      rating: 5,
+      review: "Fantastic jollof rice and the portions are generous. Fast delivery and great customer service through WhatsApp.",
+      date: "1 month ago"
+    },
+    {
+      name: "Sarah O.",
+      rating: 5,
+      review: "Finally found authentic Nigerian food in Doha! The pounded yam is perfect and the pepper soup is amazing.",
+      date: "3 weeks ago"
+    },
+    {
+      name: "David L.",
+      rating: 5,
+      review: "Introduced my Qatari friends to African cuisine through Demat Kitchen. They loved it! Highly recommend the suya.",
+      date: "2 months ago"
+    },
+    {
+      name: "Grace N.",
+      rating: 5,
+      review: "The freshness of the ingredients really shows in every dish. Best African restaurant in Qatar by far!",
+      date: "1 week ago"
+    },
+    {
+      name: "Ibrahim S.",
+      rating: 5,
+      review: "Quick ordering via WhatsApp and excellent food quality. The catfish pepper soup is outstanding!",
+      date: "3 weeks ago"
+    },
+  ];
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -68,17 +107,17 @@ const Home = () => {
             Bringing the flavors of home to Africans in diaspora and sharing African cuisine with Qatar
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
-            <Button variant="order" size="lg" asChild>
-              <a
-                href="https://wa.me/97471962487"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
-              >
-                <MessageCircle size={20} />
-                Order on WhatsApp
-              </a>
-            </Button>
+          <Button variant="order" size="lg" asChild>
+            <a
+              href="https://wa.me/97433254965"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <MessageCircle size={20} />
+              Order on WhatsApp
+            </a>
+          </Button>
             <Button variant="outline" size="lg" asChild className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
               <Link to="/menu">View Menu</Link>
             </Button>
@@ -157,6 +196,49 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Customer Reviews Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
+            What Our Customers Say
+          </h2>
+          <p className="font-inter text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Don't just take our word for it - hear from our happy customers
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {reviews.map((review, index) => (
+              <Card
+                key={index}
+                className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 border-border bg-card animate-fade-in-up"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <h3 className="font-playfair text-lg font-semibold text-foreground">
+                        {review.name}
+                      </h3>
+                      <p className="font-inter text-sm text-muted-foreground">
+                        {review.date}
+                      </p>
+                    </div>
+                    <Quote size={24} className="text-primary/20" />
+                  </div>
+                  <div className="flex gap-1 mb-3">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} size={16} className="fill-secondary text-secondary" />
+                    ))}
+                  </div>
+                  <p className="font-inter text-muted-foreground text-sm leading-relaxed">
+                    "{review.review}"
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-primary">
         <div className="container mx-auto px-4 text-center">
@@ -168,7 +250,7 @@ const Home = () => {
           </p>
           <Button variant="order" size="lg" asChild>
             <a
-              href="https://wa.me/97471962487"
+              href="https://wa.me/97433254965"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 mx-auto"
