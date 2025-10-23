@@ -74,6 +74,7 @@ import papayaPineappleOrange from "@/assets/papaya-pineapple-orange.jpg";
 import coconutWaterPineappleLemon from "@/assets/coconut-water-pineapple-lemon.jpg";
 import watermelonPineappleMint from "@/assets/watermelon-pineapple-mint.jpg";
 import orangeMangoPineapple from "@/assets/orange-mango-pineapple.jpg";
+import hibiscusDrink from "@/assets/hibiscus-drink.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
@@ -484,7 +485,7 @@ const Menu = () => {
         {
           name: "Hibiscus Drink (Zobo / Sobolo / Bissap)",
           description: "Traditional hibiscus drink served chilled",
-          image: juice,
+          image: hibiscusDrink,
           variations: [{ name: "Regular", price: "12 QAR" }],
         },
         {

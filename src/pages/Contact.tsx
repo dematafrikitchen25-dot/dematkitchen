@@ -41,8 +41,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+974 7196 2487"],
-      link: "tel:+97471962487",
+      details: ["+974 3325 4965"],
+      link: "tel:+97433254965",
     },
     {
       icon: Mail,
@@ -129,7 +129,7 @@ const Contact = () => {
               </p>
               <Button variant="order" size="lg" asChild>
                 <a
-                  href="https://wa.me/97471962487"
+                  href="https://wa.me/97433254965"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 mx-auto"
@@ -187,7 +187,7 @@ const Contact = () => {
                     <div>
                       <h3 className="text-xl font-semibold text-foreground mb-2">How to Order</h3>
                       <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
-                        <li>Click the "Order on WhatsApp" button or send us a message at +974 7196 2487</li>
+                        <li>Click the "Order on WhatsApp" button or send us a message at +974 3325 4965</li>
                         <li>Tell us what dishes you'd like from our menu</li>
                         <li>Provide your delivery address and preferred time</li>
                         <li>We'll confirm your order and estimated delivery time</li>
