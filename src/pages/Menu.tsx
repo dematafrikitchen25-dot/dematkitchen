@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MessageCircle } from "lucide-react";
 import { useState } from "react";
+import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
+import CategoryNavigation from "@/components/CategoryNavigation";
 import soupDish from "@/assets/soup-dish.jpg";
 import mainDish from "@/assets/main-dish.jpg";
 import juice from "@/assets/juice.jpg";
@@ -78,6 +80,19 @@ import hibiscusDrink from "@/assets/hibiscus-drink.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
+
+  const categoryIds = [
+    "soups-stews",
+    "swallows",
+    "rice-sides",
+    "rice-pasta",
+    "pepper-soups",
+    "protein-addons",
+    "sides-small-chops",
+    "drinks-juices",
+    "smoothies-exotic",
+    "fresh-juice-mixes",
+  ];
 
   const menuCategories = [
     {
@@ -609,6 +624,8 @@ const Menu = () => {
 
   return (
     <div className="min-h-screen pt-32">
+      <FloatingWhatsAppButton />
+      
       {/* Hero Section */}
       <section className="bg-gradient-primary py-20">
         <div className="container mx-auto px-4 text-center">
@@ -624,11 +641,14 @@ const Menu = () => {
       {/* Menu Categories */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
+          <CategoryNavigation />
+          
           <div className="space-y-16">
             {menuCategories.map((category, categoryIndex) => (
               <div
                 key={categoryIndex}
-                className="animate-fade-in-up"
+                id={categoryIds[categoryIndex]}
+                className="animate-fade-in-up scroll-mt-32"
                 style={{ animationDelay: `${categoryIndex * 200}ms` }}
               >
                 {/* Category Heading */}
@@ -685,7 +705,7 @@ const Menu = () => {
                           {/* Order Now Button */}
                           <Button variant="order" size="sm" asChild className="w-full">
                             <a
-                              href={`https://wa.me/97471962487?text=Hi! I'd like to order: ${encodeURIComponent(item.name)} (${encodeURIComponent(selectedVariation.name)}) - ${encodeURIComponent(selectedVariation.price)}`}
+                              href={`https://wa.me/97433254965?text=Hi! I'd like to order: ${encodeURIComponent(item.name)} (${encodeURIComponent(selectedVariation.name)}) - ${encodeURIComponent(selectedVariation.price)}`}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="flex items-center gap-2 justify-center"
@@ -716,7 +736,7 @@ const Menu = () => {
           </p>
           <Button variant="order" size="lg" asChild>
             <a
-              href="https://wa.me/97471962487"
+              href="https://wa.me/97433254965"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 mx-auto"
