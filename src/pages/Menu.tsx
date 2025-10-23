@@ -68,6 +68,12 @@ import lemonGinger from "@/assets/lemon-ginger.jpg";
 import pineappleGinger from "@/assets/pineapple-ginger.jpg";
 import appleCarrot from "@/assets/apple-carrot.jpg";
 import watermelonPineapple from "@/assets/watermelon-pineapple.jpg";
+import pineappleGuavaOrange from "@/assets/pineapple-guava-orange.jpg";
+import bananaMangoP from "@/assets/banana-mango-pineapple.jpg";
+import papayaPineappleOrange from "@/assets/papaya-pineapple-orange.jpg";
+import coconutWaterPineappleLemon from "@/assets/coconut-water-pineapple-lemon.jpg";
+import watermelonPineappleMint from "@/assets/watermelon-pineapple-mint.jpg";
+import orangeMangoPineapple from "@/assets/orange-mango-pineapple.jpg";
 
 const Menu = () => {
   const [selectedVariations, setSelectedVariations] = useState<{ [key: string]: number }>({});
@@ -519,37 +525,37 @@ const Menu = () => {
         {
           name: "Orange + Mango + Pineapple",
           description: "Triple tropical fruit smoothie with rich flavors",
-          image: juice,
+          image: orangeMangoPineapple,
           variations: [{ name: "Regular", price: "18 QAR" }],
         },
         {
           name: "Watermelon + Pineapple + Mint",
           description: "Refreshing smoothie with cooling mint finish",
-          image: watermelonPineapple,
+          image: watermelonPineappleMint,
           variations: [{ name: "Regular", price: "18 QAR" }],
         },
         {
           name: "Coconut Water + Pineapple + Lemon",
           description: "Hydrating coconut water blend with tropical fruits",
-          image: juice,
+          image: coconutWaterPineappleLemon,
           variations: [{ name: "Regular", price: "18 QAR" }],
         },
         {
           name: "Papaya + Pineapple + Orange",
           description: "Vitamin-rich tropical smoothie with papaya goodness",
-          image: juice,
+          image: papayaPineappleOrange,
           variations: [{ name: "Regular", price: "18 QAR" }],
         },
         {
           name: "Banana + Mango + Pineapple",
           description: "Creamy and sweet tropical fruit smoothie blend",
-          image: juice,
+          image: bananaMangoP,
           variations: [{ name: "Regular", price: "18 QAR" }],
         },
         {
           name: "Pineapple + Guava + Orange",
           description: "Exotic smoothie with unique guava flavor profile",
-          image: juice,
+          image: pineappleGuavaOrange,
           variations: [{ name: "Regular", price: "18 QAR" }],
         },
       ],
