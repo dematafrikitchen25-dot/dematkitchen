@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Clock, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Instagram, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="font-playfair text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <h3 className="font-playfair text-xl font-bold ">
               Demat African Kitchen
             </h3>
             <p className="text-muted-foreground font-inter text-sm">
@@ -61,6 +61,12 @@ const Footer = () => {
                 <Phone size={18} className="text-primary flex-shrink-0" />
                 <a href="tel:+97433254965" className="hover:text-primary transition-colors">
                   +974 3325 4965
+                </a>
+              </li>
+              <li className="flex items-center gap-2 text-muted-foreground">
+                <MessageCircle size={18} className="text-primary flex-shrink-0" />
+                <a href="https://wa.me/97471962487" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  +97471962487
                 </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">

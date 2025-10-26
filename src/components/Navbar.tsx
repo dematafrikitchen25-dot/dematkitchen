@@ -59,7 +59,7 @@ const Navbar = () => {
               alt="Demat African Kitchen Logo" 
               className="h-14 w-14 object-contain transition-all duration-300 group-hover:scale-110"
             />
-            <h1 className="font-playfair text-lg md:text-xl font-bold bg-gradient-primary bg-clip-text text-transparent transition-all duration-300">
+            <h1 className="font-playfair text-lg md:text-xl font-bold ">
               Demat African Kitchen
             </h1>
           </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
             ))}
             <Button variant="order" size="default" asChild>
               <a
-                href="https://wa.me/97433254965"
+                href="https://wa.me/+97471962487"
                 target="_blank"
                 rel="noopener noreferrer"
               >

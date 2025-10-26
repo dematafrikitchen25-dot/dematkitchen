@@ -5,7 +5,7 @@ import { useState } from "react";
 import FloatingWhatsAppButton from "@/components/FloatingWhatsAppButton";
 import CategoryNavigation from "@/components/CategoryNavigation";
 import soupDish from "@/assets/soup-dish.jpg";
-import mainDish from "@/assets/main-dish.jpg";
+import mainDish from "@/assets/FuFu.jpeg";
 import juice from "@/assets/juice.jpg";
 import blackSoup from "@/assets/black-soup.jpg";
 import stewBeef from "@/assets/stew-beef.jpg";
@@ -705,7 +705,7 @@ const Menu = () => {
                           {/* Order Now Button */}
                           <Button variant="order" size="sm" asChild className="w-full">
                             <a
-                              href={`https://wa.me/97433254965?text=Hi! I'd like to order: ${encodeURIComponent(item.name)} (${encodeURIComponent(selectedVariation.name)}) - ${encodeURIComponent(selectedVariation.price)}`}
+                              href={`https://wa.me/+97471962487?text=Hi! I'd like to order: ${encodeURIComponent(item.name)} (${encodeURIComponent(selectedVariation.name)}) - ${encodeURIComponent(selectedVariation.price)}`}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="flex items-center gap-2 justify-center"
@@ -736,7 +736,7 @@ const Menu = () => {
           </p>
           <Button variant="order" size="lg" asChild>
             <a
-              href="https://wa.me/97433254965"
+              href="https://wa.me/+97471962487"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 mx-auto"
