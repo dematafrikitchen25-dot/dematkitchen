@@ -41,8 +41,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+974 3325 4965"],
-      link: "tel:+97433254965",
+      details: ["+974 7445 1122"],
+      link: "tel:+97474451122",
     },
     {
       icon: MessageCircle,
