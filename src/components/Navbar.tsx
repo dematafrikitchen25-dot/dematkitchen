@@ -119,7 +119,7 @@ const Navbar = () => {
               ))}
               <Button variant="order" size="default" className="w-full" asChild>
                 <a
-                  href="https://wa.me/97433254965"
+                  href="https://wa.me/+97471962487"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
