@@ -45,6 +45,12 @@ const Contact = () => {
       link: "tel:+97433254965",
     },
     {
+      icon: MessageCircle,
+      title: "WhatsApp",
+      details: ["+97471962487"],
+      link: "https://wa.me/+97471962487",
+    },
+    {
       icon: Mail,
       title: "Email",
       details: ["dematafrikitchen25@gmail.com"],
@@ -75,7 +81,7 @@ const Contact = () => {
       {/* Contact Cards */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
             {contactInfo.map((info, index) => (
               <Card
                 key={index}
@@ -129,7 +135,7 @@ const Contact = () => {
               </p>
               <Button variant="order" size="lg" asChild>
                 <a
-                  href="https://wa.me/97433254965"
+                  href="https://wa.me/+97471962487"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 mx-auto"
@@ -187,7 +193,7 @@ const Contact = () => {
                     <div>
                       <h3 className="text-xl font-semibold text-foreground mb-2">How to Order</h3>
                       <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
-                        <li>Click the "Order on WhatsApp" button or send us a message at +974 3325 4965</li>
+                        <li>Click the "Order on WhatsApp" button or send us a message at +97471962487</li>
                         <li>Tell us what dishes you'd like from our menu</li>
                         <li>Provide your delivery address and preferred time</li>
                         <li>We'll confirm your order and estimated delivery time</li>
