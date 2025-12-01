@@ -42,9 +42,14 @@ const CategoryNavigation = () => {
       <Card className="border-border bg-card/95 backdrop-blur-sm shadow-card">
         <CardContent className="p-4">
           <div className="flex items-center justify-between mb-2">
-            <h3 className="font-playfair text-lg font-semibold text-foreground">
-              Menu Categories
-            </h3>
+            <div>
+              <h3 className="font-playfair text-lg font-semibold text-foreground">
+                Menu Categories
+              </h3>
+              <p className="text-xs text-muted-foreground mt-1 md:hidden">
+                Click here to select the Category of your choice
+              </p>
+            </div>
             <Button
               variant="ghost"
               size="sm"
