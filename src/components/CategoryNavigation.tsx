@@ -47,7 +47,7 @@ const CategoryNavigation = () => {
                 Menu Categories
               </h3>
               <p className="text-xs text-muted-foreground mt-1 md:hidden">
-                Click here to select the Category of your choice
+                Tap the "Arrow" to select the Category of your choice.
               </p>
             </div>
             <Button
